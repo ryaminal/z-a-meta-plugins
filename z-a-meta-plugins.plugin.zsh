@@ -67,7 +67,8 @@ Zinit_Annex_Meta_Plugins_Map=(
 
     # General console utilities. Includes also a LS_COLORS theme with
     # the Zsh completion configured.
-    console-tools "dircolors-material sharkdp ogham/exa BurntSushi/ripgrep jonas/tig"
+    console-tools "sharkdp ogham/exa BurntSushi/ripgrep jonas/tig"
+    console-tools+material "dircolors-material console-tools"
 
     # Fuzzy searchers (4 of them).
     fuzzy       "fzf fzy lotabout/skim peco/peco"
