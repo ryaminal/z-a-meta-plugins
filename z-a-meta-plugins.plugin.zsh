@@ -40,10 +40,10 @@ autoload -Uz ∧za-meta-plugins-before-load-handler \
 typeset -gA Zinit_Annex_Meta_Plugins_Map
 Zinit_Annex_Meta_Plugins_Map=(
     # Zinit annexes
-    annexes     "zinit-zsh/z-a-unscope zinit-zsh/z-a-as-monitor zinit-zsh/z-a-patch-dl \
-                    zinit-zsh/z-a-rust zinit-zsh/z-a-submods zinit-zsh/z-a-bin-gem-node"
+    annexes     "disco0/z-a-unscope zdharma-continuum/z-a-as-monitor zdharma-continuum/z-a-patch-dl \
+                    zdharma-continuum/z-a-rust issenn/z-a-submods zdharma-continuum/z-a-bin-gem-node"
     # Annexes + the zinit-console
-    annexes+con "zinit-zsh/zinit-console annexes"
+    annexes+con "zdharma-continuum/zinit-console annexes"
 
     # @zsh-users
     zsh-users   "zsh-users/zsh-syntax-highlighting zsh-users/zsh-autosuggestions zsh-users/zsh-completions"
@@ -87,16 +87,16 @@ Zinit_Annex_Meta_Plugins_Map=(
 typeset -gA Zinit_Annex_Meta_Plugins_Config_Map
 typeset -g _std="lucid"
 Zinit_Annex_Meta_Plugins_Config_Map=(
-    # @zinit-zsh (all annexes + extensions, without Meta-Plugins, obviously)
-    zinit-zsh/zinit-console     "$_std"
-    zinit-zsh/z-a-as-monitor    "$_std"
-    zinit-zsh/z-a-patch-dl      "$_std"
-    zinit-zsh/z-a-unscope       "$_std"
-    zinit-zsh/z-a-submods       "$_std"
-    zinit-zsh/z-a-rust          "$_std"
-    zinit-zsh/z-a-bin-gem-node  "$_std"
-    zinit-zsh/z-a-man           "$_std"
-    zinit-zsh/z-a-test          "$_std"
+    # @zdharma-continuum (all annexes + extensions, without Meta-Plugins, obviously)
+    zdharma-continuum/zinit-console     "$_std"
+    zdharma-continuum/z-a-as-monitor    "$_std"
+    zdharma-continuum/z-a-patch-dl      "$_std"
+    disco0/z-a-unscope       "$_std"
+    issenn/z-a-submods       "$_std"
+    zdharma-continuum/z-a-rust          "$_std"
+    zdharma-continuum/z-a-bin-gem-node  "$_std"
+    zdharma-continuum/z-a-man           "$_std"
+    zdharma-continuum/z-a-test          "$_std"
     # @zsh-users
     zsh-users/zsh-autosuggestions       "$_std atload'_zsh_autosuggest_start;'"
     zsh-users/zsh-syntax-highlighting   "$_std atinit'ZINIT[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay;'"
