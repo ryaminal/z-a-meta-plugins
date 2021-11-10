@@ -40,8 +40,8 @@ autoload -Uz ∧za-meta-plugins-before-load-handler \
 typeset -gA Zinit_Annex_Meta_Plugins_Map
 Zinit_Annex_Meta_Plugins_Map=(
     # Zinit annexes
-    annexes     "disco0/z-a-unscope zdharma-continuum/z-a-as-monitor zdharma-continuum/z-a-patch-dl \
-                    zdharma-continuum/z-a-rust issenn/z-a-submods zdharma-continuum/z-a-bin-gem-node"
+    annexes     "zdharma-continuum/z-a-unscope zdharma-continuum/z-a-as-monitor zdharma-continuum/z-a-patch-dl \
+                    zdharma-continuum/z-a-rust zdharma-continuum/z-a-submods zdharma-continuum/z-a-bin-gem-node"
     # Annexes + the zinit-console
     annexes+con "zdharma-continuum/zinit-console annexes"
 
@@ -92,8 +92,8 @@ Zinit_Annex_Meta_Plugins_Config_Map=(
     zdharma-continuum/zinit-console     "$_std"
     zdharma-continuum/z-a-as-monitor    "$_std"
     zdharma-continuum/z-a-patch-dl      "$_std"
-    disco0/z-a-unscope       "$_std"
-    issenn/z-a-submods       "$_std"
+    zdharma-continuum/z-a-unscope       "$_std"
+    zdharma-continuum/z-a-submods       "$_std"
     zdharma-continuum/z-a-rust          "$_std"
     zdharma-continuum/z-a-bin-gem-node  "$_std"
     zdharma-continuum/z-a-man           "$_std"
